@@ -1,11 +1,9 @@
 require('dotenv').config()
 const { Octokit } = require('@octokit/core');
-const githubToken = process.env.GH_TOKEN;
+const githubToken = process.env.secrets.GITHUB_TOKEN;
 if (!githubToken) { return process.exit(2); } // check if token is missing
 
-const octokit = new Octokit({
-    auth: githubToken,
-});
+const octokit = new Octokit({ auth: githubToken });
 (async () => {
   let { data } = await octokit.request('GET /repos/sandiegocs/add-to-gh/issues?filter=all');
   for (let issue of data) {
