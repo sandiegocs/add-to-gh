@@ -1,0 +1,11 @@
+{
+  "name": "add-to-gh",
+  "version": "0.1.0",
+  "description": "Self-service invitations for /orgs/sandieogcs",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/core": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
