@@ -28,6 +28,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
       - name: Close issue
-        run: gh issue close --comment "Check your e-mail for your invitation. If this didn't work, please contact an officer." ${{ github.event.number }}
+        run: gh issue close --comment "Check your e-mail for your invitation. If this didn't work, please contact an officer." ${{ github.event.issue.number }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
