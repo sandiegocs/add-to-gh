@@ -1,7 +1,6 @@
 require('dotenv').config()
 const { Octokit } = require('@octokit/core');
 const githubToken = process.env.GH_TOKEN;
-console.log(githubToken);
 if (!githubToken) { return process.exit(2); } // check if token is missing
 
 const octokit = new Octokit({ auth: githubToken });
