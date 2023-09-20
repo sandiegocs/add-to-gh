@@ -7,3 +7,5 @@ collaborate on projects and contribute to the `sandiegocs.net` website.
 
 ## Acknowledgements
 Adapted from [devlancer-lucas/org-invite-bot](https://github.com/devlancer-lucas/org-invite-bot).
+
+Many thanks to [Alex](https://github.com/Gibistash) for helping test this script.
