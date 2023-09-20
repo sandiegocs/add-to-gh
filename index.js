@@ -1,8 +1,6 @@
 require('dotenv').config()
 const { Octokit } = require('@octokit/core');
-const {
-  GH_TOKEN: githubToken,
-} = process.env;
+const githubToken = process.env.GH_TOKEN;
 
 const octokit = new Octokit({
     auth: githubToken,
