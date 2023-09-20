@@ -20,7 +20,7 @@ const octokit = new Octokit({
       default:
         console.error(status);
         console.error(`Failed to invite ${issue.user.login}`);
-        break;
+        process.exit(1); // non-zero exit since it fails.
     }
   }
 })();
